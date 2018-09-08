@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/RobotoLight.eot');
+    src: url('../fonts/RobotoLight.eot') format('embedded-opentype'),
+    url('../fonts/RobotoLight.woff2') format('woff2'),
+    url('../fonts/RobotoLight.woff') format('woff'),
+    url('../fonts/RobotoLight.ttf') format('truetype'),
+    url('../fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/RobotoBlack.eot');
+    src: url('../fonts/RobotoBlack.eot') format('embedded-opentype'),
+    url('../fonts/RobotoBlack.woff2') format('woff2'),
+    url('../fonts/RobotoBlack.woff') format('woff'),
+    url('../fonts/RobotoBlack.ttf') format('truetype'),
+    url('../fonts/RobotoBlack.svg#RobotoBlack') format('svg');
+}
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('../fonts/PlayfairDisplayRegular.eot');
+    src: url('../fonts/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplayRegular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplayRegular.woff') format('woff'),
+    url('../fonts/PlayfairDisplayRegular.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplayRegular.svg#PlayfairDisplayRegular') format('svg');
+}
+@font-face {
+    font-family: 'PlayfairDisplayBold';
+    src: url('../fonts/PlayfairDisplayBold.eot');
+    src: url('../fonts/PlayfairDisplayBold.eot') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplayBold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplayBold.woff') format('woff'),
+    url('../fonts/PlayfairDisplayBold.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplayBold.svg#PlayfairDisplayBold') format('svg');
+}
+@font-face {
+    font-family: 'PlayfairDisplayBlack';
+    src: url('../fonts/PlayfairDisplayBlack.eot');
+    src: url('../fonts/PlayfairDisplayBlack.eot') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplayBlack.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplayBlack.woff') format('woff'),
+    url('../fonts/PlayfairDisplayBlack.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplayBlack.svg#PlayfairDisplayBlack') format('svg');
+}
+@font-face {
+    font-family: 'HammersmithOneRegular';
+    src: url('../fonts/HammersmithOneRegular.eot');
+    src: url('../fonts/HammersmithOneRegular.eot') format('embedded-opentype'),
+    url('../fonts/HammersmithOneRegular.woff2') format('woff2'),
+    url('../fonts/HammersmithOneRegular.woff') format('woff'),
+    url('../fonts/HammersmithOneRegular.ttf') format('truetype'),
+    url('../fonts/HammersmithOneRegular.svg#HammersmithOneRegular') format('svg');
+}
+
