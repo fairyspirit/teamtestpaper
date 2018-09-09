@@ -1,1 +1,256 @@
 @import url(../css/fonts.css);
+$white: #fff;
+$bgcolor: #2b1a57;
+$black: #000 !default;
+$primary: #00e0d0 !default;
+$textcolor-1: #413d4b;
+$textcolor-2: #716e78;
+$textcolor-3: #636268;
+$textcolor-4: #c6c4c9;
+$textcolor-5: #666666;
+$textcolor-6: #ebebeb;
+
+
+$caption: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
+
+@mixin transition-all() {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@mixin color-over-picture() {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: fade-out($bgcolor,.15);
+}
+@mixin btn(){
+  text-decoration: none;
+  font-family: 'HammersmithOneRegular', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: $primary;
+  text-transform: uppercase;
+  border: solid 1px $primary;
+  padding: 14px;
+}
+
+h2 {
+  font-family: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+}
+
+#mainNav {
+  @include transition-all;
+  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif;;
+  .navbar-brand {
+    width: 100%;
+    max-width: 130px;
+  }
+  .navbar-nav {
+    > li.nav-item {
+      > a.nav-link,
+      > a.nav-link:focus {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $bgcolor;
+        padding-left: 15px;
+        &:hover {
+          color: $primary;
+        }
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding: 10px;
+      background-color: transparent;
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: $white;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Styling for the home
+#home {
+  background-color: white;
+  @include background-cover;
+  .banner {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .header_content {
+      position: absolute;
+      h1 {
+        font-family: 'PlayfairDisplayBlack',Helvetica, Arial, sans-serif;;
+        font-size: 32px;
+        color: $white;
+      }
+      .line {
+        border-bottom: solid 1px $primary;
+        width: 50px;
+      }
+      p {
+        font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+      }
+    }
+    &:before {
+      @include color-over-picture;
+    }
+  }
+}
+.owl-carousel {
+  .owl-nav {
+    display: none;
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 70px;
+    left: 48%;
+  }
+  button.owl-dot {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    border: solid 1px white;
+    border-radius: 6px;
+    margin-right: 5px;
+    &.active {
+      background-color: $primary;
+      border: $primary;
+    }
+  }
+  @media (max-width: 992px) {
+    .owl-dots {
+      bottom: 40px;
+    }
+  }
+  @media (max-width: 768px) {
+    .owl-dots {
+      bottom: 20px;
+    }
+  }
+}
+
+  // Styling for the about
+  #about {
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    h2 {
+      color: $textcolor-1;
+      margin-bottom: 19px;
+    }
+    p {
+      color: $textcolor-2;
+      font-family: 'RobotoLight', sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 22px;
+    }
+    a {
+      @include btn;
+      margin-top: 70px;
+    }
+  }
+  // Styling for the expertise
+  #expertise {
+    h2 {
+      color: $textcolor-1;
+    }
+    span {
+      display: block;
+      font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: $textcolor-3;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .line {
+      border-bottom: solid 3px $textcolor-4;
+      width: 50px;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+    .icon {
+      padding-top: 36px;
+      padding-bottom: 36px;
+      &:first-child {
+        border-bottom: solid 1px $textcolor-6;
+        border-right: solid 1px $textcolor-6;
+      }
+      &:nth-child(2) {
+        border-bottom: solid 1px $textcolor-6;
+      }
+      &:nth-child(3) {
+        border-bottom: solid 1px $textcolor-6;
+        border-left: solid 1px $textcolor-6;
+      }
+      &:nth-child(4) {
+        border-right: solid 1px $textcolor-6;
+      }
+      &:nth-child(5) {
+        border-right: solid 1px $textcolor-6;
+      }
+      @media (max-width: 768px) {
+        &:nth-child(3) {
+          border-bottom: solid 1px $textcolor-6;
+          border-right: solid 1px $textcolor-6;
+          border-left: none;
+        }
+        &:nth-child(4) {
+          border-bottom: solid 1px $textcolor-6;
+          border-right: none;
+        }
+        &:nth-child(5) {
+          border-right: solid 1px $textcolor-6;
+        }
+      }
+      img {
+        display: block;
+        height: 50px;
+        margin: auto;
+
+      }
+      h3 {
+        font-family: 'RobotoBlack', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: $textcolor-1;
+        margin-top: 36px;
+      }
+      p {
+        font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: $textcolor-5;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+// Styling for the portfolio section
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
