@@ -9,7 +9,8 @@ $textcolor-3: #636268;
 $textcolor-4: #c6c4c9;
 $textcolor-5: #666666;
 $textcolor-6: #ebebeb;
-
+$textcolor-7: #f9f9f9;
+$linecolor: #655d80;
 
 $caption: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
 
@@ -175,6 +176,7 @@ h2 {
   }
   // Styling for the expertise
   #expertise {
+    padding-bottom: 68px;
     h2 {
       color: $textcolor-1;
     }
@@ -189,8 +191,7 @@ h2 {
     .line {
       border-bottom: solid 3px $textcolor-4;
       width: 50px;
-      margin: auto;
-      margin-bottom: 15px;
+      margin: 0 auto 15px;
     }
     .icon {
       padding-top: 36px;
@@ -246,11 +247,100 @@ h2 {
       }
     }
   }
+// Styling for the team section
+#teams{
+  background-image: url("../img/team.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 69px;
+  padding-bottom: 69px;
+  text-align: center;
+  h2 {
+    font-family: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: $white;
+  }
+  span {
+    display: block;
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: $textcolor-7;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .line{
+    width: 50px;
+    border-bottom: solid 2px $linecolor;
+    margin:0 auto 17px;
+  }
+  .photo {
+    width: 220px;
+    height: 229px;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+    img {
+      display: block;
+      width: 100%}
+    }
+  h3{
+    font-family:"RobotoBlack", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 58px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    border: solid 1px $linecolor;
+    span {
+      font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      color: $textcolor-7;
+    }
+  }
+  .appeal {
+    span {
+      color: #f3f3f3;
+      font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+    a {
+      @include btn;
+    }
+  }
 
-// Styling for the portfolio section
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
+
+}
+
+// Styling for the works section
+#works {
+  padding-top: 68px;
+  padding-bottom: 70px;
+  h2 {
+    font-family: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: $textcolor-1;
+    text-transform: uppercase;
+    margin-bottom: 69px;
+  }
+  a {
+    font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: $textcolor-1;
+    text-decoration: none;
+  }
+  .portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .btn {
+    padding-top: 70px;
+    margin: auto;
+    a {
+      @include btn;
+    }
+  }
 }
