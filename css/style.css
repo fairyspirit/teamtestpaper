@@ -5,8 +5,9 @@ h2 {
 
 #mainNav {
   text-transform: uppercase;
-  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif;
-  font-size: 13px; }
+  font-family: 'RobotoBlack', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  position: absolute; }
   #mainNav .navbar-brand {
     width: 100%;
     max-width: 130px;
@@ -30,6 +31,49 @@ h2 {
       #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
         color: #00e0d0; } }
+
+#home .banner {
+  position: relative; }
+  #home .banner img {
+    width: 100%; }
+  #home .banner .header_content {
+    position: absolute;
+    bottom: 207px;
+    text-align: center; }
+    #home .banner .header_content h1 {
+      text-align: center;
+      font-family: 'PlayfairDisplayBlack',Helvetica, Arial, sans-serif;
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 25px; }
+    #home .banner .header_content .line {
+      margin: auto;
+      border-bottom: solid 1px #00e0d0;
+      width: 50px; }
+    #home .banner .header_content p {
+      text-align: center;
+      font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 25px;
+      margin-bottom: 60px; }
+    #home .banner .header_content a {
+      text-decoration: none;
+      font-family: 'HammersmithOneRegular', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      color: #00e0d0;
+      text-transform: uppercase;
+      border: solid 1px #00e0d0;
+      padding: 14px; }
+  #home .banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(43, 26, 87, 0.85); }
 
 .owl-carousel .owl-nav {
   display: none; }
