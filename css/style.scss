@@ -1,8 +1,9 @@
 @import url(../css/fonts.css);
+
 $white: #fff;
 $bgcolor: #2b1a57;
-$black: #000 !default;
-$primary: #00e0d0 !default;
+$black: #000;
+$primary: #00e0d0;
 $textcolor-1: #413d4b;
 $textcolor-2: #716e78;
 $textcolor-3: #636268;
@@ -49,77 +50,125 @@ h2 {
   font-family: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
   font-size: 22px;
 }
+// Styling for the navigation
 
+//#mainNav {
+//  @include transition-all;
+//  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif;
+//  font-size: 13px;
+//  .navbar-brand {
+//    width: 100%;
+//    max-width: 130px;
+//    outline: none;
+//  }
+//  .navbar-nav {
+//    > li.nav-item {
+//      > a.nav-link,
+//      > a.nav-link:focus {
+//        color: $white;
+//        background-color: $bgcolor;
+//        padding-left: 15px;
+//        outline: none;
+//        &:hover {
+//          color: $primary;
+//        }
+//      }
+//    }
+//  }
+//  @media (min-width: 992px) {
+//    .navbar-nav > li.nav-item > a.nav-link {
+//      padding: 10px;
+//      background-color: transparent;
+//    }
+//    .navbar-nav > li.nav-item > a.nav-link,
+//    .navbar-nav > li.nav-item > a.nav-link:focus {
+//      color: $white;
+//      &:hover {
+//        color: $primary;
+//      }
+//      &.active {
+//        color: $primary;
+//      }
+//    }
+//  }
+//}
+//
+//// Styling for the home
+//
+//#home {
+//  background-color: white;
+//  @include background-cover;
+//  .banner {
+//    position: relative;
+//    img {
+//      width: 100%;
+//    }
+//    .header_content {
+//      position: absolute;
+//      h1 {
+//        font-family: 'PlayfairDisplayBlack',Helvetica, Arial, sans-serif;;
+//        font-size: 32px;
+//        color: $white;
+//      }
+//      .line {
+//        border-bottom: solid 1px $primary;
+//        width: 50px;
+//      }
+//      p {
+//        font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+//        font-size: 14px;
+//      }
+//    }
+//    //&:before {
+//    //  @include color-over-picture;
+//    //}
+//  }
+//}
 #mainNav {
-  @include transition-all;
-  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif;;
+  text-transform: uppercase;
+  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif;
+  font-size: 13px;
   .navbar-brand {
-    width: 100%;
-    max-width: 130px;
-  }
+        width: 100%;
+        max-width: 130px;
+        outline: none;
+      }
   .navbar-nav {
-    > li.nav-item {
-      > a.nav-link,
-      > a.nav-link:focus {
-        font-size: 13px;
-        text-transform: uppercase;
-        color: $white;
-        background-color: $bgcolor;
-        padding-left: 15px;
-        &:hover {
-          color: $primary;
-        }
-        &.active {
-          color: $primary;
+        > li.nav-item {
+          > a.nav-link,
+          > a.nav-link:focus {
+            color: $white;
+            background-color: transparent;
+            padding: 10px;
+            &:hover {
+              color: $primary;
+            }
+          }
+          &.active {
+            > a.nav-link {
+              color: $primary;
+            }
         }
       }
-    }
   }
-  @media (min-width: 992px) {
-    .navbar-nav > li.nav-item > a.nav-link {
-      padding: 10px;
-      background-color: transparent;
-    }
-    .navbar-nav > li.nav-item > a.nav-link,
-    .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: $white;
-      &:hover {
-        color: $primary;
+  @media (max-width: 992px) {
+    .navbar-nav {
+      > li.nav-item {
+        > a.nav-link,
+        > a.nav-link:focus {
+          color: $white;
+          background-color: $bgcolor;
+          padding-left: 15px;
+          &:hover {
+            color: $primary;
+          }
+        }
       }
     }
   }
 }
 
-// Styling for the home
-#home {
-  background-color: white;
-  @include background-cover;
-  .banner {
-    position: relative;
-    img {
-      width: 100%;
-    }
-    .header_content {
-      position: absolute;
-      h1 {
-        font-family: 'PlayfairDisplayBlack',Helvetica, Arial, sans-serif;;
-        font-size: 32px;
-        color: $white;
-      }
-      .line {
-        border-bottom: solid 1px $primary;
-        width: 50px;
-      }
-      p {
-        font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
-        font-size: 14px;
-      }
-    }
-    &:before {
-      @include color-over-picture;
-    }
-  }
-}
+
 .owl-carousel {
   .owl-nav {
     display: none;
@@ -274,15 +323,23 @@ h2 {
     margin:0 auto 17px;
   }
   .photo {
-    width: 220px;
-    height: 229px;
+    width: 255px;
+    height: 260px;
     overflow: hidden;
     background-color: white;
     display: inline-block;
+    @media (max-width: 992px) {
+      & {
+        width: 220px;
+        height: 229px;
+      }
+    }
     img {
       display: block;
       width: 100%}
     }
+
+
   h3{
     font-family:"RobotoBlack", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -344,3 +401,143 @@ h2 {
     }
   }
 }
+// Styling for the people_say section
+#people_say {
+  background-image: url("../img/BACKGROUND.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 69px;
+  padding-bottom: 182px;
+  .quotes {
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    color: $textcolor-6;
+    line-height: 22px;
+  }
+  p {
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: $textcolor-7;
+    line-height: 26px;
+  }
+  .author {
+    font-family: "RobotoBlack", Helvetica, Arial,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    span {
+      display: block;
+      font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+      font-size: 13px;
+    }
+  }
+}
+// Styling for the form-massage section
+
+#Massage {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  h2 {
+    font-family: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: $textcolor-1;
+    margin-bottom: 35px;
+  }
+  button {
+    @include btn;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: white;
+  }
+}
+
+// Styling for the footer
+
+footer {
+  background-image: url("../img/footer.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .left-block {
+    margin-top: 27px;
+  }
+  p {
+    font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: $white;
+  }
+  h4 {
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 39px;
+    margin-top: 20px;
+    color: $white;
+  }
+  .icon-map:before {
+    content: "\f3c5";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 15px;
+    font-weight: 900;
+    font-size: 19px;
+  }
+  .icon-phone:before {
+    content: "\f095";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 10px;
+    font-weight: 900;
+    font-size: 17px;
+  }
+  .form-control {
+    background: transparent;
+    border-radius: 0;
+    font-size: 14px;
+    width: 500px;
+  }
+  .btn {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 10px;
+    border-radius: 0;
+  }
+  .social_icons {
+    font-size: 15px;
+    line-height: 35px;
+    color: white;
+    i {
+      border: solid 1px white;
+      padding: 9px;
+      border-radius: 100%;
+      margin-top: 27px;
+      margin-right: 8px;
+      &:first-child {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+      &:nth-child(5) {
+        padding-left: 6px;
+      }
+
+    }
+  }
+  .terms\&conditions {
+    padding-top: 70px;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'PlayfairDisplayRegular', Helvetica , Arial, sans-serif;
+      font-size: 14px;
+      color: $white;
+      margin-right: 32px;
+    }
+    p {
+      font-family: 'PlayfairDisplayRegular', Helvetica , Arial, sans-serif;
+      font-size: 14px;
+      color: $white;
+    }
+  }
+}
+
+
+
+
+

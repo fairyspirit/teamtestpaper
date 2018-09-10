@@ -4,68 +4,32 @@ h2 {
   font-size: 22px; }
 
 #mainNav {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif; }
+  text-transform: uppercase;
+  font-family: 'RobotoBlack',Helvetica, Arial, sans-serif;
+  font-size: 13px; }
   #mainNav .navbar-brand {
     width: 100%;
-    max-width: 130px; }
+    max-width: 130px;
+    outline: none; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    font-size: 13px;
-    text-transform: uppercase;
     color: #fff;
-    background-color: #2b1a57;
-    padding-left: 15px; }
+    background-color: transparent;
+    padding: 10px; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
       color: #00e0d0; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-      color: #00e0d0; }
-  @media (min-width: 992px) {
-    #mainNav .navbar-nav > li.nav-item > a.nav-link {
-      padding: 10px;
-      background-color: transparent; }
+  #mainNav .navbar-nav > li.nav-item.active > a.nav-link {
+    color: #00e0d0; }
+  @media (max-width: 992px) {
     #mainNav .navbar-nav > li.nav-item > a.nav-link,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: #fff; }
+      color: #fff;
+      background-color: #2b1a57;
+      padding-left: 15px; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
         color: #00e0d0; } }
-
-#home {
-  background-color: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  #home .banner {
-    position: relative; }
-    #home .banner img {
-      width: 100%; }
-    #home .banner .header_content {
-      position: absolute; }
-      #home .banner .header_content h1 {
-        font-family: 'PlayfairDisplayBlack',Helvetica, Arial, sans-serif;
-        font-size: 32px;
-        color: #fff; }
-      #home .banner .header_content .line {
-        border-bottom: solid 1px #00e0d0;
-        width: 50px; }
-      #home .banner .header_content p {
-        font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
-        font-size: 14px; }
-    #home .banner:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      background-color: rgba(43, 26, 87, 0.85); }
 
 .owl-carousel .owl-nav {
   display: none; }
@@ -191,11 +155,15 @@ h2 {
     border-bottom: solid 2px #655d80;
     margin: 0 auto 17px; }
   #teams .photo {
-    width: 220px;
-    height: 229px;
+    width: 255px;
+    height: 260px;
     overflow: hidden;
     background-color: white;
     display: inline-block; }
+    @media (max-width: 992px) {
+      #teams .photo {
+        width: 220px;
+        height: 229px; } }
     #teams .photo img {
       display: block;
       width: 100%; }
@@ -240,6 +208,11 @@ h2 {
     font-size: 14px;
     color: #413d4b;
     text-decoration: none; }
+  #works .portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto; }
   #works .btn {
     padding-top: 70px;
     margin: auto; }
@@ -251,5 +224,119 @@ h2 {
       text-transform: uppercase;
       border: solid 1px #00e0d0;
       padding: 14px; }
+
+#people_say {
+  background-image: url("../img/BACKGROUND.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 69px;
+  padding-bottom: 182px; }
+  #people_say .quotes {
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    color: #ebebeb;
+    line-height: 22px; }
+  #people_say p {
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #f9f9f9;
+    line-height: 26px; }
+  #people_say .author {
+    font-family: "RobotoBlack", Helvetica, Arial,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; }
+    #people_say .author span {
+      display: block;
+      font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+      font-size: 13px; }
+
+#Massage {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  #Massage h2 {
+    font-family: 'PlayfairDisplayBold', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #413d4b;
+    margin-bottom: 35px; }
+  #Massage button {
+    text-decoration: none;
+    font-family: 'HammersmithOneRegular', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: solid 1px #00e0d0;
+    padding: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: white; }
+
+footer {
+  background-image: url("../img/footer.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  footer .left-block {
+    margin-top: 27px; }
+  footer p {
+    font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff; }
+  footer h4 {
+    font-family: 'PlayfairDisplayRegular', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 39px;
+    margin-top: 20px;
+    color: #fff; }
+  footer .icon-map:before {
+    content: "\f3c5";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 15px;
+    font-weight: 900;
+    font-size: 19px; }
+  footer .icon-phone:before {
+    content: "\f095";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 10px;
+    font-weight: 900;
+    font-size: 17px; }
+  footer .form-control {
+    background: transparent;
+    border-radius: 0;
+    font-size: 14px;
+    width: 500px; }
+  footer .btn {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 10px;
+    border-radius: 0; }
+  footer .social_icons {
+    font-size: 15px;
+    line-height: 35px;
+    color: white; }
+    footer .social_icons i {
+      border: solid 1px white;
+      padding: 9px;
+      border-radius: 100%;
+      margin-top: 27px;
+      margin-right: 8px; }
+      footer .social_icons i:first-child {
+        padding-left: 13px;
+        padding-right: 13px; }
+      footer .social_icons i:nth-child(5) {
+        padding-left: 6px; }
+  footer .terms\&conditions {
+    padding-top: 70px; }
+    footer .terms\&conditions a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'PlayfairDisplayRegular', Helvetica , Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin-right: 32px; }
+    footer .terms\&conditions p {
+      font-family: 'PlayfairDisplayRegular', Helvetica , Arial, sans-serif;
+      font-size: 14px;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
